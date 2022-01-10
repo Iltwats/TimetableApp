@@ -4,8 +4,8 @@
 
 ### Problem Statement:
 
-During my college journey, have heard till now from many students that they have faced this issue of remebering their college schedule, lecture timing and place. But when classes shifted to online they thought this issue they have been facing will be resolved, but it got more complex remembering and managing google meet links, rememebring when you've have classes and when you don't and even our college faculties faced this issue. </p>
-Technology plays a vital role in day-to-day life activities which in turn made great changes in many work fields and out of them Mobile Application is one of the major developments, and taking that into consideration I built an android application for my college where students no longer need to remember their dauly schedule whether the classes are offline or online and also can keep track of their assignments, exams schedule and any acdemic events.
+During my college journey, till now have heard from many students that they have faced this issue of remebering their college schedule, lecture timing and place. But when classes shifted to online they thought this issue they have been facing will be resolved, but it got more complex remembering and managing google meet links, rememebring when you've have classes and when you don't and even our college faculties faced this issue. </p>
+Technology plays a vital role in day-to-day life activities which in turn made great changes in many work fields and out of them Mobile Application is one of the major developments, and taking that into consideration I built an android application for my college where students no longer need to remember their daily schedule whether the classes are offline or online and also can keep track of their assignments, exams schedule and any acdemic events.
 
 ### Problem Solution
  In a gist solution I thought was to build:</br>
@@ -26,6 +26,20 @@ Technology plays a vital role in day-to-day life activities which in turn made g
 |:-----------------:|:--------------------:| :----------------------:|
 | <img src="https://raw.githubusercontent.com/Iltwats/TimetableApp/master/assets/5.jpg" height="400"/>|<img src="https://raw.githubusercontent.com/Iltwats/TimetableApp/master/assets/7.jpg" height="400"/>| <img src="https://raw.githubusercontent.com/Iltwats/TimetableApp/master/assets/2.jpg" height="400"/>|
 
+### Functionality and Concepts Used
+- App is completely offline, where user don't need to have an active internet connection to use the app.
+- Uses clean architecture to organize and maintain the code.
+- User have complete flexibility on adding and removing the classes from schedule and editing it.
+- Application is completely written (100%) in Kotlin
+- Most of the Jetpack components are used here and have taken **Modern App Development Concepts**
+  <img src="https://raw.githubusercontent.com/Iltwats/TimetableApp/master/assets/jetpack.png" height="300"/>
+- Live Data and ViewModel has been used throughout the app to handle device rotation so that unsaved data doesn't get destroyed.
+
+### Application Link 
+You can download this app for demo from [here](https://github.com/Iltwats/TimetableApp/raw/master/app/build/outputs/apk/debug/app-debug.apk) or you can check the release section. This app allows login without JECRC college id.
+
+### Future Scope
+This app can be integrated with more features to solve problems daily faced by students such as to find last year papers/notes during exam time, a place where community events are shared and a place to share more of job opportunities and combinedly create a complete college app for students.
 
 
 
