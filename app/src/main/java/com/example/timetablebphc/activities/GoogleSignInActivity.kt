@@ -67,9 +67,9 @@ class GoogleSignInActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun  isBitsian(user: FirebaseUser): Boolean {
+    private fun isJECRCian(user: FirebaseUser): Boolean {
         val emailId = user.email.toString()
-        val pattern = Regex("^\\w+@hyderabad\\.bits-pilani\\.ac\\.in\$")
+        val pattern = Regex("^\\w+@jecrcu\\.edu\\.in\$")
         return pattern.matches(emailId)
     }
 
@@ -115,7 +115,7 @@ class GoogleSignInActivity : AppCompatActivity(), View.OnClickListener {
     private fun updateUI(user: FirebaseUser?) {
         progressBar.visibility = View.GONE
         if (user != null) {
-            if(!isBitsian(user)) {
+            if(!isJECRCian(user)) {
                 Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, MainActivity::class.java) // (1) (2)
                 startActivity(intent)
