@@ -1,6 +1,6 @@
-# ASJ-App Submission
+# TimeTable App
 
-## TimeTable App
+## ASJ-App Submission
 
 ### Problem Statement:
 
