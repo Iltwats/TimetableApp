@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_navigation"
+    app:startDestination="@+id/navigation_menu_fragment">
+
+
+    <fragment
+        android:id="@+id/navigation_menu_fragment"
+        android:name="com.example.timetablebphc.ui.addCourse.AddMenuFragment"
+        android:label="Add Menu"
+        tools:layout="@layout/fragment_add_menu" >
+        <action
+            android:id="@+id/action_navigation_menu_fragment_to_navigation_add_course"
+            app:destination="@id/navigation_add_course" />
+        <action
+            android:id="@+id/action_navigation_menu_fragment_to_navigation_add_test"
+            app:destination="@id/navigation_add_test" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_add_course"
+        android:name="com.example.timetablebphc.ui.addCourse.AddCourseFragment"
+        android:label="Add course"
+        tools:layout="@layout/fragment_add_course" />
+
+    <fragment
+        android:id="@+id/navigation_add_test"
+        android:name="com.example.timetablebphc.ui.addQuiz.AddQuizFragment"
+        android:label="Add test"
+        tools:layout="@layout/fragment_add_test" />
+</navigation>

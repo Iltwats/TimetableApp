@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Timetable JECRC</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="more">More</string>
+    <string name="g_api_key">375442202057-oqnl1rdqbbk5mtjvfuloaf51irlp2ur4.apps.googleusercontent.com</string>
+    <string name="sign_in_instruction">Please sign in using your Google email id</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="add_button">add button</string>
+    <string name="add_course_name">Add course name</string>
+    <string name="time">Time:</string>
+    <string name="date">Date:</string>
+    <string name="course_time">Course Time:</string>
+    <string name="days_of_week">Days of week:</string>
+    <string name="meet_link_for_the_class">Meet link for the class:</string>
+    <string name="add_course">Add course</string>
+    <string name="add_quiz">Add quiz/ test/ assignment</string>
+    <string name="timetable">TimeTable</string>
+    <string name="delete_quiz">delete quiz</string>
+    <string name="delete_course">delete course</string>
+    <string name="add_code_hint">Enter code to show on timetable(eg:M3)</string>
+    <string name="enter_course_name_and_details">Enter course name and details</string>
+    <string name="coming_up">Coming Up</string>
+    <string name="enter_meet_link">Enter meet link</string>
+    <string name="remind_me_before_class">Remind me before class</string>
+    <string name="save">save</string>
+
+
+    <string-array name="quiz_types">
+        <item>Quiz</item>
+        <item>Test</item>
+        <item>Assignment</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+</resources>

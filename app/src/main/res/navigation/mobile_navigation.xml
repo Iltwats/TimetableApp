@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.timetablebphc.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action android:id="@+id/action_navigation_home_to_quiz_detail"
+            app:destination="@+id/navigation_quiz_detail">
+            <argument
+                android:name="position"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_quiz_detail"
+        android:name="com.example.timetablebphc.ui.home.QuizDetailFragment"
+        android:label="Quiz Detail"
+        tools:layout="@layout/fragment_quiz_details">
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action android:id="@+id/action_navigation_quiz_detail_to_home"
+            app:destination="@+id/navigation_home"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.timetablebphc.ui.timetable.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_timetable" >
+        <action android:id="@+id/action_navigation_dashboard_to_course_detail"
+            app:destination="@+id/navigation_course_detail">
+            <argument
+                android:name="position"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_course_detail"
+        android:name="com.example.timetablebphc.ui.timetable.CourseDetailFragment"
+        android:label="Course Detail"
+        tools:layout="@layout/fragment_course_details">
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action android:id="@+id/action_navigation_course_detail_to_dashboard"
+            app:destination="@+id/navigation_dashboard"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.timetablebphc.ui.more.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more">
+    <action android:id="@+id/action_navigation_more_to_signin_activity"
+        app:destination="@+id/navigation_signin_activity"/>
+    </fragment>
+    <activity
+        android:id="@+id/navigation_signin_activity"
+        android:name="com.example.timetablebphc.activities.GoogleSignInActivity"
+        android:label="SignIn Activity"
+        tools:layout="@layout/activity_signin"/>
+
+
+</navigation>
